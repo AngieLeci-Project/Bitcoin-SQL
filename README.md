@@ -21,8 +21,7 @@ This project explores historical Bitcoin (BTC/USDT) price data through structure
 
 ## Dataset
 
-- **Source:** Binance BTC/USDT daily candlestick data (btc 1d.csv)
-- **Size:** 2,997 rows (2018-01-01 to 2026-03-16)
+- **Source:** btc 1d.csv
 - **Columns:** Open, High, Low, Close, Volume, Number of Trades, Quote Asset Volume, and more
 
 ---

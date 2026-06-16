@@ -107,8 +107,8 @@ SELECT
 	btc_date,
     open_price,
     close_price,
-    ROUND(close_price - open_price, 2) AS prce_change
-FROM bitcoin_price;bitcoin_price
+    ROUND(close_price - open_price, 2) AS price_change
+FROM bitcoin_price;
 #measure daily gain/loss
 
 SELECT
@@ -134,8 +134,7 @@ SELECT
 
 SELECT 
 	SUM(volume) AS total_volume
-FROM bitcoin_price
-ORDER by total_volume DESC;
+FROM bitcoin_price;
 #total trading volume
 
 SELECT
@@ -183,6 +182,5 @@ WITH returns AS (
 )
 SELECT
     ROUND(AVG(daily_return), 2) AS avg_return
-FROM returns
-ORDER BY avg_return DESC;
+FROM returns;
 #average percentage bitcoin price change in a day

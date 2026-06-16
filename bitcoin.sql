@@ -91,17 +91,17 @@ FROM bitcoin_price;
 SELECT
     ROUND(AVG(close_price), 2) AS avg_close_price
 FROM bitcoin_price;
-#Aerage closing price
+#Average closing price
 
 SELECT
 	MAX(close_price) AS highest_price
 FROM bitcoin_price;
-#higest closing price
+#highest closing price
 
 SELECT
 	MIN(close_price) AS lowest_price
 FROM bitcoin_price;
-#lowest closing prce
+#lowest closing price
 
 SELECT 
 	btc_date,

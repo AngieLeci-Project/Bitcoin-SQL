@@ -182,5 +182,6 @@ WITH returns AS (
 )
 SELECT
     ROUND(AVG(daily_return), 2) AS avg_return
-FROM returns;
+FROM returns
+ORDER BY avg_return DESC;
 #average percentage bitcoin price change in a day
